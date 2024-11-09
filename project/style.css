@@ -1,0 +1,79 @@
+body{
+    cursor: url(cursor/pointer.png) , auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.button{
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    width: 90px;
+    height: 65px;
+    margin-top: 450px;
+    align-items: center;    
+    border-radius: 60px;    
+    cursor: pointer;
+    border-color: red;
+}
+
+.title{
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    margin-top: -400px;
+    color: darkmagenta;
+}
+
+#message {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+  }
+
+  #message.show{
+    display: block;
+    opacity: 1;
+  }
+
+
+
+  @media (max-width: 768px) {
+    .button {
+        width: 80px; /* უფრო პატარა ბოტონი */
+        height: 60px;
+        margin-top: 350px;
+    }
+
+    .title {
+        margin-top: -250px;
+        font-size: 2rem; /* სათაური უფრო მცირე */
+    }
+
+    #message {
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button {
+        width: 70px; /* კიდევ უფრო პატარა ბოტონი */
+        height: 50px;
+        margin-top: 250px;
+    }
+
+    .title {
+        margin-top: -150px;
+        font-size: 1.5rem; /* სათაური კიდევ უფრო მცირე */
+    }
+
+    #message {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
